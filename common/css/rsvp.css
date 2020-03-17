@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.rsvpForm {
+    position: relative;
+    margin: 20px 0;
+    display: block;
+    /*width: 300px;*/
+}
+
+.rsvpForm input {
+    border: 0;
+    border-bottom: 2px solid #333;
+    padding: 15px 0;
+    display: block;
+    font-size: 18px;
+    font-family: 'Muli', sans-serif;
+    width: 100%;
+    transition: 0.1s ease-in;
+}
+
+.rsvpForm input:focus,
+.rsvpForm input:valid {
+    border-bottom-color: darksalmon;
+    outline: none;
+}
+
+.rsvpForm input:focus + label span ,
+.rsvpForm input:valid + label span{
+    color: darksalmon;
+    transform: translateY(-30px);
+}
+
+.rsvpForm label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+
+.rsvpForm label span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.rsvpNumberForm label {
+    /*position: absolute;*/
+    top: 15px;
+    left: 0;
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+}
+.rsvpNumberForm input{
+    border: 0;
+    border-bottom: 2px solid #333;
+    /*padding: 15px 0;*/
+    /*display: block;*/
+    font-size: 18px;
+    font-family: 'Muli', sans-serif;
+    width: 100%;
+}
+
+.rsvpbntn{
+    width: 100%;
+
+}
