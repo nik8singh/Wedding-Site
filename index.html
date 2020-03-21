@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="common/css/index.css" />
     <link rel="stylesheet" href="common/css/rsvp.css" />
     <link rel="stylesheet" href="common/css/checkbox.css" />
+    <link rel="stylesheet" href="common/css/navBar.css" />
     <link rel="shortcut icon" href="common/img/favicon.ico" type="image/x-icon" />
     <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
   </head>
@@ -171,42 +172,64 @@
       </div>
     </div>
 
-    <div>
+    <header>
+
       <div class="container-fluid">
         <div class="row tm-brand-row">
-          <div class="col-lg-4 col-11 boundry">
+          <div class="col-lg-5">
             <div class="tm-brand-container tm-bg-white-transparent">
               <img src="common/img/fargo2.jpg" class="brand-img" alt="" />
               <div class="tm-brand-texts">
                 <h1 class="text-uppercase tm-brand-name">#NIKकीSneha</h1>
-                <p class="small font-weight-bold">To Have and To Hold</p>
+                <p class="hashtag font-weight-bold">December 05-07, 2020 <span class="counterTry"></span></p>
               </div>
             </div>
           </div>
+          <div class="col-lg-6 " style="margin-left: 20px ">
+           <nav class="navbar navbar-expand-lg navbar-light navbar-inverse">
+             <a class="navbar-brand hidden" href="#"></a>
+             <button class="navbar-toggler navbar-toggler-right myNav" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon">
+                 <i class="fas fa-bars" style="color:#333333; font-size:28px; float: right"></i>
+               </span>
+             </button>
+
+             <div class="collapse navbar-collapse navlinks" id="navbarSupportedContent" style="color: red!important;">
+               <ul class="navbar-nav mr-auto">
+                 <li class="nav-item active">
+                   <a class="nav-link" href="#">Home</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Invitation</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Story</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Gallery</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Events</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Accommodation</a>
+                 </li>
+               </ul>
+             </div>
+           </nav>
+          </div>
         </div>
+
       </div>
-    </div>
+
+
+
+    </header>
+
 
     <section class="row" id="tmHome">
-      <div class="col-12 tm-home-container">
-        <div class="text-white tm-home-left tm-bg-black-transparent boundry">
-          <div id="clockdiv" class=" boundry row">
-            <div class="boundry col-7" style="float: left; height: 100%; ">
-              <p class="text-uppercase tm-slogan " style="">
-                December 05-07, 2020
-              </p>
-            </div>
-
-<!--            <div style="float: left; " class="boundry col-5 myClock">-->
-<!--              <span id="days" class="days">12</span>-->
-<!--              <div class="smalltext">Days Left</div>-->
-<!--            </div>-->
-
-
-            <div class="counterTry"></div>
-          </div>
-
-          <hr class="tm-home-hr" />
+      <div class="col-11 tm-home-container">
+        <div class="tm-home-left col-4">
           <h2 class="tm-home-title">
             Nikhil
             <span><i class="fas fa-1x fa-heartbeat tm-brand-icon"></i></span>
@@ -214,20 +237,56 @@
           </h2>
           <p class="tm-home-text">
             From tutoring each other in college to long distance, we didn't let
-            go. <br />Join us in a celebration of love and friendship.
+            go. uehwfo hweoi fhiewhjfi weopif hjwh fpwaedhpc yuhearfchpioewy h0
+            wiefhj piweh jfpiwe hpfwpeo fhjopwejupf wea
+             weopiafj poweajfpo wjeopfj opwej fopjowepjfopwe jpojfpwoejopwepofjwpef
+            weo fjopiawej fopjewopfj owep[a<br />Join us in a celebration of love and friendship.
           </p>
           <a
             href="#"
-            class="btn mybtn"
+            class="btn mybtn "
             data-toggle="modal"
             data-target="#modalLoginForm"
             data-backdrop="static"
-            >RSVP</a
-          >
+            >Invitation</a>
         </div>
-        <div class="tm-home-right picpanel">
-          <img class="picpanelimg" src="common/img/vegas3.jpg" alt="" />
+
+<!--        <div class="tm-home-middle">-->
+<!--          <img class="picpanelimg" src="common/img/vegas3.jpg" alt="" />-->
+<!--        </div>-->
+
+<!--        <div class="tm-home-middle">-->
+<!--          <img class="picpanelimg" src="common/img/vegascandid.jpg" alt="" />-->
+<!--        </div>-->
+
+        <div class="tm-home-right col-7">
+          <img class="picpanelimg" src="common/img/back4.jpg" alt="" />
         </div>
+
+      </div>
+
+    </section>
+
+    <section class="row gallerySection" id="homeGallery">
+      <div class="col-11 tm-home-container">
+
+
+        <div class="tm-home-middle col-3" style="  margin-left: 50px;">
+          <img class="gallerypanleimg" src="common/img/vegas3.jpg" alt="" />
+        </div>
+
+        <div class="tm-home-middle col-3" style="margin-left: 0px">
+          <img class="gallerypanleimg" src="common/img/vegascandid.jpg" alt="" />
+        </div>
+
+        <div class="tm-home-middle col-3" style="margin-left: 0px">
+          <img class="gallerypanleimg" src="common/img/vegascandid.jpg" alt="" />
+        </div>
+
+        <div class="tm-home-middle  col-3" style="margin-left: 0">
+          <img class="gallerypanleimg" src="common/img/vegascandid.jpg" alt="" />
+        </div>
+
       </div>
     </section>
 
