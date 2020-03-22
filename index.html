@@ -200,13 +200,17 @@
                    <a class="nav-link" href="#">Home</a>
                  </li>
                  <li class="nav-item">
-                   <a class="nav-link" href="#">Invitation</a>
+                   <a class="nav-link" data-backdrop="static"
+                      data-target="#modalLoginForm"
+                      data-toggle="modal"
+                      href="#"
+                   >Invitation</a>
                  </li>
                  <li class="nav-item">
-                   <a class="nav-link" href="#">Story</a>
+                   <a class="nav-link" href="#tmStory" id="storylink">Story</a>
                  </li>
                  <li class="nav-item">
-                   <a class="nav-link" href="#">Gallery</a>
+                   <a class="nav-link" href="#homeGallery" id="gallerylink">Gallery</a>
                  </li>
                  <li class="nav-item">
                    <a class="nav-link" href="#">Events</a>
@@ -223,68 +227,59 @@
       </div>
 
 
-
     </header>
 
-
     <section class="row" id="tmHome">
-      <div class="col-11 tm-home-container">
-        <div class="tm-home-left col-4">
-          <h2 class="tm-home-title">
-            Nikhil
-            <span><i class="fas fa-1x fa-heartbeat tm-brand-icon"></i></span>
-            Sneha
-          </h2>
-          <p class="tm-home-text">
-            From tutoring each other in college to long distance, we didn't let
-            go. uehwfo hweoi fhiewhjfi weopif hjwh fpwaedhpc yuhearfchpioewy h0
-            wiefhj piweh jfpiwe hpfwpeo fhjopwejupf wea
-             weopiafj poweajfpo wjeopfj opwej fopjowepjfopwe jpojfpwoejopwepofjwpef
-            weo fjopiawej fopjewopfj owep[a<br />Join us in a celebration of love and friendship.
-          </p>
+      <div class="tm-home-main-image">
+        <img alt="" class="picpanelimg" src="common/img/vegas1.JPG"/>
+        <span id="overlay_text" style=" text-align: center">We are getting married! <br>Join us in celebration of love and friendship.</span>
+      </div>
+    </section>
+
+    <section class="row " id="tmStory">
+      <div class="tm-home-story">
+        <h2 class="tm-home-title">Nikhil<span><i class="fas fa-1x fa-heartbeat tm-brand-icon"></i></span>Sneha</h2>
+        <p>
+          From tutoring each other in college to long distance, we didn't let
+          go. uehwfo hweoi fhiewhjfi weopif hjwh fpwaedhpc yuhearfchpioewy h0
+          wiefhj piweh jfpiwe hpfwpeo fhjopwejupf wea
+          weopiafj poweajfpo wjeopfj opwej fopjowepjfopwe jpojfpwoejopwepofjwpef
+          weo fjopiawej fopjewopfj owep[a<br/>
+        </p>
+        <div>
           <a
-            href="#"
-            class="btn mybtn "
-            data-toggle="modal"
-            data-target="#modalLoginForm"
-            data-backdrop="static"
-            >Invitation</a>
+                  class="btn mybtn "
+                  data-backdrop="static"
+                  data-target="#modalLoginForm"
+                  data-toggle="modal"
+                  href="#"
+          >Invitation</a>
         </div>
 
-<!--        <div class="tm-home-middle">-->
-<!--          <img class="picpanelimg" src="common/img/vegas3.jpg" alt="" />-->
-<!--        </div>-->
-
-<!--        <div class="tm-home-middle">-->
-<!--          <img class="picpanelimg" src="common/img/vegascandid.jpg" alt="" />-->
-<!--        </div>-->
-
-        <div class="tm-home-right col-7">
-          <img class="picpanelimg" src="common/img/back4.jpg" alt="" />
-        </div>
 
       </div>
 
     </section>
 
+
     <section class="row gallerySection" id="homeGallery">
       <div class="col-11 tm-home-container">
 
 
-        <div class="tm-home-middle col-3" style="  margin-left: 50px;">
-          <img class="gallerypanleimg" src="common/img/vegas3.jpg" alt="" />
+        <div class="tm-home-middle col-3" style="  margin-left: 80px;">
+          <img alt="" class="gallerypanleimg" src="common/img/vegas3.jpg"/>
         </div>
 
-        <div class="tm-home-middle col-3" style="margin-left: 0px">
-          <img class="gallerypanleimg" src="common/img/vegascandid.jpg" alt="" />
+        <div class="tm-home-middle col-3" style="margin-left: 0">
+          <img class="gallerypanleimg" src="common/img/vegascandid.jpg" alt=""/>
         </div>
 
-        <div class="tm-home-middle col-3" style="margin-left: 0px">
-          <img class="gallerypanleimg" src="common/img/vegascandid.jpg" alt="" />
+        <div class="tm-home-middle col-3" style="margin-left: 0">
+          <img alt="" class="gallerypanleimg" src="common/img/back2.jpg"/>
         </div>
 
         <div class="tm-home-middle  col-3" style="margin-left: 0">
-          <img class="gallerypanleimg" src="common/img/vegascandid.jpg" alt="" />
+          <img alt="" class="gallerypanleimg" src="common/img/IMG-1670.JPG"/>
         </div>
 
       </div>
