@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="common/css/rsvp.css" />
     <link rel="stylesheet" href="common/css/checkbox.css" />
     <link rel="stylesheet" href="common/css/navBar.css" />
+    <link href="common/css/story.css" rel="stylesheet"/>
     <link rel="shortcut icon" href="common/img/favicon.ico" type="image/x-icon" />
     <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
   </head>
@@ -230,34 +231,57 @@
     </header>
 
     <section class="row" id="tmHome">
-      <div class="tm-home-main-image">
-        <img alt="" class="picpanelimg" src="common/img/vegas1.JPG"/>
-        <span id="overlay_text" style=" text-align: center">We are getting married! <br>Join us in celebration of love and friendship.</span>
-      </div>
+        <div class="col-xs-10 tm-home-main-image">
+            <img alt="" class="picpanelimg" src="common/img/vegas1.JPG"/>
+            <span id="overlay_text" style=" text-align: center">We are getting married! <br>Join us in celebration of love and friendship.</span>
+
+            <a
+                    class="btn mybtn "
+                    data-backdrop="static"
+                    data-target="#modalLoginForm"
+                    data-toggle="modal"
+                    href="#"
+            >R S V P</a>
+
+        </div>
     </section>
 
     <section class="row " id="tmStory">
-      <div class="tm-home-story">
-        <h2 class="tm-home-title">Nikhil<span><i class="fas fa-1x fa-heartbeat tm-brand-icon"></i></span>Sneha</h2>
-        <p>
-          From tutoring each other in college to long distance, we didn't let
-          go. uehwfo hweoi fhiewhjfi weopif hjwh fpwaedhpc yuhearfchpioewy h0
-          wiefhj piweh jfpiwe hpfwpeo fhjopwejupf wea
-          weopiafj poweajfpo wjeopfj opwej fopjowepjfopwe jpojfpwoejopwepofjwpef
-          weo fjopiawej fopjewopfj owep[a<br/>
-        </p>
-        <div>
-          <a
-                  class="btn mybtn "
-                  data-backdrop="static"
-                  data-target="#modalLoginForm"
-                  data-toggle="modal"
-                  href="#"
-          >Invitation</a>
+        <div class="tm-home-story">
+            <h2 class="tm-home-title">Nikhil<span><i class="fas fa-1x fa-heartbeat tm-brand-icon"></i></span>Sneha</h2>
+
+            <div class="storycontainer">
+                <div class="timeslot">
+                    <span>College</span>
+
+                    <blockquote>
+                        Nikhil, being one of the better programmers in class, tutored some of the students in college, I was one of them. In spite of our different personalities and interests, we connected over our mutual love for pencil sketches and eventually became close friends. With his
+                        adventurous and outgoing personality, he brings out a part of me that I never knew existed.
+                        <cite>Sneha</cite>
+                    </blockquote>
+                </div>
+                <div class="timeslot even">
+                    <span>College</span>
+                    <blockquote>Sneha being the cutest girl in class, was definitely not easy to impress. But my art skills and our studying together brought us closer. She makes my life worth living.
+                        <cite>Nikhil</cite>
+                    </blockquote>
+                </div>
+                <div class="timeslot">
+                    <span>Long-Distance</span>
+                    <blockquote>Despite being in a long-distance relationship, we made efforts to make it work and those efforts paid off. Communication was key, even with our busy schedules we discussed everything under the sun, from favorite movies to our fears, frustrations, and future. It wasn't
+                        always easy but we learned to trust each other and that made us realize that we are ready for a life together.
+                        <cite>Together</cite>
+                    </blockquote>
+                </div>
+                <div class="timeslot even">
+                    <span>Today</span>
+                    <blockquote>After procrastinating (and being forced by our families), we officially introduced each other to our parents last year. Soon, our families met and fixed the date. We can't wait to start this new chapter and would love to celebrate it with all our favorite people. That
+                        includes you!<br/>
+                        <cite>Together</cite>
+                    </blockquote>
+                </div>
+            </div>
         </div>
-
-
-      </div>
 
     </section>
 
@@ -266,26 +290,27 @@
       <div class="col-11 tm-home-container">
 
 
-        <div class="tm-home-middle col-3" style="  margin-left: 80px;">
-          <img alt="" class="gallerypanleimg" src="common/img/vegas3.jpg"/>
-        </div>
+          <div class="tm-home-middle col-3 mobileMargin" style="  margin-left: 80px;">
+              <img alt="" class="gallerypanleimg" src="common/img/vegas3.jpg"/>
+          </div>
 
-        <div class="tm-home-middle col-3" style="margin-left: 0">
-          <img class="gallerypanleimg" src="common/img/vegascandid.jpg" alt=""/>
-        </div>
+          <div class="tm-home-middle col-3 mobileMargin" style="margin-left: 0">
+              <img class="gallerypanleimg" src="common/img/vegascandid.jpg" alt=""/>
+          </div>
 
-        <div class="tm-home-middle col-3" style="margin-left: 0">
-          <img alt="" class="gallerypanleimg" src="common/img/back2.jpg"/>
-        </div>
+          <div class="tm-home-middle col-3 mobileMargin" style="margin-left: 0">
+              <img alt="" class="gallerypanleimg" src="common/img/back2.jpg"/>
+          </div>
 
-        <div class="tm-home-middle  col-3" style="margin-left: 0">
-          <img alt="" class="gallerypanleimg" src="common/img/IMG-1670.JPG"/>
-        </div>
+          <div class="tm-home-middle  col-3 mobileMargin" style="margin-left: 0">
+              <img alt="" class="gallerypanleimg" src="common/img/IMG-1670.JPG"/>
+          </div>
 
       </div>
     </section>
 
   </body>
+
 </html>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">

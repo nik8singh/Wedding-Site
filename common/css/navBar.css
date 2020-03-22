@@ -23,7 +23,8 @@ nav .navbar-nav li a {
 }
 
 nav .navbar-nav li a:hover {
-    color: #655400 !important;
+    /*color: #655400 !important;*/
+    color: #650005 !important;
     font-weight: bolder;
     font-size: large;
 

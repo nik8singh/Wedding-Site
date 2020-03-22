@@ -29,9 +29,14 @@ body {
   src: url("../../assets/Belly Betty.ttf") format("opentype");
 }
 
+@font-face {
+  font-family: Soulofyou;
+  src: url("../../assets/Soul Of You.ttf") format("opentype");
+}
+
 .bg-image {
   /* The image used */
-  background-image: url("../img/pexels-photo-235994.jpeg");
+  background-image: url("../img/background/marble-large.jpg");
 
   /* Add the blur effect */
   /*filter: blur(3px);*/
@@ -39,7 +44,7 @@ body {
 
   /* Full height */
   min-height: 3000px;
-  height: 100%;
+  height: auto;
   width: 100%;
   position: absolute;
   top: 0;
@@ -50,6 +55,9 @@ body {
   /*background-position: top right 600px;*/
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -108,8 +116,6 @@ body {
 
 .tm-home-container {
   display: flex;
-  /*align-items: center;*/
-  /*justify-content: center;*/
 }
 
 .hashtag {
@@ -158,11 +164,12 @@ body {
   transition: transform .2s; /* Animation */
 }
 
-.gallerypanleimg {
+.tm-home-middle img {
 
   /*position: relative;*/
   /*height: inherit;*/
-  width: inherit;
+  width: 100%;
+  height: 100%;
   /*top : -100px*/
 
 }
@@ -193,6 +200,7 @@ body {
   position: relative;
   /*padding: 0!important;*/
   overflow: hidden;
+  font-family: Hernitta, serif;
 }
 
 .tm-home-main-image img {
@@ -209,8 +217,13 @@ body {
   left: 25%;
   color: white;
   font-size: 80px;
+  /*font-family: Hernitta, serif;*/
+}
 
-  font-family: Hernitta, serif;
+.tm-home-main-image a {
+  position: absolute;
+  top: 80%;
+  left: 45%;
 }
 
 .tm-home-story {
@@ -219,10 +232,11 @@ body {
   text-align: center;
   z-index: 5;
   color: #79000f;
+
 }
 
 .tm-home-story p {
-  width: 50%;
+  width: 100%;
   height: auto;
   margin-bottom: 47px;
   display: inline-block;
@@ -274,27 +288,30 @@ body {
 
 
 .mybtn {
-  font-family: cursif, serif;
-  background: rgba(255, 239, 171, 0.69) !important;
+  font-family: Trajan, serif;
+  background: rgba(255, 255, 255, 0.73) !important;
   width: 200px;
-  height: 60px;
-  padding-top: 15px !important;
+  height: 50px;
+  padding-top: 0px !important;
   /*font-weight: bold!important;*/
-  font-size: x-large !important;
+  font-size: 30px !important;
   /*opacity: .5;*/
   /*font: inherit;*/
   line-height: 1;
   transition: 0.5s;
-
+  color: #000000 !important;
 }
 
-.mybtn:hover{
+.mybtn:hover {
   /*box-shadow: [inset?] [top] [left] [blur] [size] [color];*/
-  box-shadow: 0 0.7em 0.7em -0.4em rgba(255, 179, 0, 0.76), inset 0 -3.5em  0 0 #614200;
-  transform: translateY(-0.25em);
-  background-color: rgb(93, 93, 93);
-  color: white!important;
-  border-color: rgb(56, 56, 56);
+  /*box-shadow: 0 0.7em 0.7em -0.4em rgba(105, 146, 88, 0.75), inset 0 -3.5em  0 0 #79000f;*/
+  box-shadow: inset 0 -3.5em 0 0 #79000f;
+  /*box-shadow: 0 0.7em 0.7em -0.4em rgba(33, 0, 10, 0.85), inset 0 -3.5em  0 0 #ffffff;*/
+  /*transform: translateY(-0.25em);*/
+  /*background-color: rgb(93, 93, 93);*/
+  color: white !important;
+  /*color: #1B1B1B!important;*/
+  border-color: rgb(81, 0, 3);
 }
 
 .rsvp-popup {
@@ -376,9 +393,9 @@ body {
 @media only screen and (max-width: 450px) {
   /* For mobile phones: */
   [class="bg-image"] {
-    /*background-position: top -100px right -150px;*/
-    background-size: 1000px;
-    /*max-height: 500px!important;*/
+    min-height: 3000px;
+    background-repeat: repeat-y;
+    background-size: cover;
   }
 
   .tm-brand-container {
@@ -395,6 +412,7 @@ body {
     max-width: 350px;
     min-width: 350px;
   }
+
   .tm-home-container {
     flex-direction: column;
   }
@@ -404,5 +422,60 @@ body {
     /*margin-top: 60px;*/
     margin-bottom: 20px;
   }
+
+  .tm-home-main-image {
+    /*margin-top: 50px;*/
+    max-height: 500px;
+    min-height: 500px;
+    width: 100%;
+    position: relative;
+    /*padding: 0!important;*/
+    overflow: hidden;
+  }
+
+  .tm-home-main-image img {
+    position: absolute;
+    top: -50px;
+  }
+
+  .tm-home-main-image span {
+    position: absolute;
+    top: 30%;
+    left: 4%;
+    color: white;
+    font-size: 40px;
+    font-family: Hernitta, serif;
+  }
+
+  .tm-home-main-image a {
+    position: absolute;
+    top: 80%;
+    left: 25%;
+  }
+
+  .tm-home-middle img {
+    /*width: 100%!important;*/
+  }
+
+
+  .col-3 {
+    max-width: 100% !important;
+  }
+
+  .mobileMargin {
+    margin-left: 7% !important;
+    margin-bottom: 10%;
+    margin-bottom: 10%;
+  }
+
+  .tm-home-middle :hover {
+    transform: scale(1);
+    filter: brightness(1);
+
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
 
 }
