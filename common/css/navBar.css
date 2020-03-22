@@ -1,0 +1,68 @@
+@font-face {
+    font-family: Alegreya;
+    src: url("../../assets/alegreya-sans.medium.ttf") format("opentype");
+}
+
+
+.navbar-inverse {
+    border-bottom-width: thin;
+    border-bottom-style: solid;
+    border-bottom-color: #aeaeae;
+}
+
+nav .navbar-nav li a {
+
+    font-family: Alegreya;
+    color: #1B1B1B !important;
+    margin-right: 4px;
+}
+
+.nav-item {
+    font-size: large;
+    margin-right: 30px;
+}
+
+nav .navbar-nav li a:hover {
+    color: #655400 !important;
+    font-weight: bolder;
+    font-size: large;
+
+}
+
+.active {
+    /*color: #760097 !important;*/
+    font-weight: bolder;
+    /*font-size: medium;*/
+    border-bottom: solid darkred;
+
+}
+
+.navbar-toggler {
+    background-color: #d4dedf !important;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .myNav {
+    }
+
+    nav .navbar-nav li a {
+
+        font-family: Alegreya;
+        color: black !important;
+        background-color: #fafdff;
+        padding-left: 20px !important;
+        font-size: x-large;
+
+    }
+
+    nav .navbar-nav li a:hover {
+
+        background-color: rgb(255, 220, 181);
+
+        font-size: x-large;
+
+    }
+
+}
+
