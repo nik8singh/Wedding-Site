@@ -194,8 +194,8 @@ body {
 
 .tm-home-main-image {
   /*margin-top: 50px;*/
-  max-height: 1000px;
-  min-height: 1000px;
+  max-height: 1500px;
+  min-height: 1500px;
   width: 100%;
   position: relative;
   /*padding: 0!important;*/
@@ -390,7 +390,7 @@ body {
 }
 
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-device-width: 500px) {
   /* For mobile phones: */
   [class="bg-image"] {
     min-height: 3000px;
@@ -404,13 +404,6 @@ body {
   }
   .tm-brand-container img {
     margin-left: 5px;
-  }
-
-  .tm-home-left {
-    margin-bottom: 50px;
-    margin-left: 10px;
-    max-width: 350px;
-    min-width: 350px;
   }
 
   .tm-home-container {
@@ -440,17 +433,18 @@ body {
 
   .tm-home-main-image span {
     position: absolute;
-    top: 30%;
-    left: 4%;
+    top: 40%;
+    left: 10%;
     color: white;
-    font-size: 40px;
+    font-size: 30px;
+    font-weight: bold;
     font-family: Hernitta, serif;
   }
 
   .tm-home-main-image a {
     position: absolute;
-    top: 80%;
-    left: 25%;
+    top: 70%;
+    left: 28%;
   }
 
   .tm-home-middle img {
@@ -459,13 +453,16 @@ body {
 
 
   .col-3 {
-    max-width: 100% !important;
+    max-width: 80% !important;
   }
 
   .mobileMargin {
-    margin-left: 7% !important;
+    margin-left: 16% !important;
     margin-bottom: 10%;
-    margin-bottom: 10%;
+  }
+
+  .tm-home-middle {
+    height: 400px !important;
   }
 
   .tm-home-middle :hover {
@@ -476,6 +473,72 @@ body {
 
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) and (min-width: 800px) {
+  /*For ipads*/
+  [class="bg-image"] {
+    min-height: 3000px;
+    background-repeat: repeat-y;
+    background-size: cover;
+  }
+
+  .tm-home-main-image {
+    /*margin-top: 50px;*/
+    max-height: 700px;
+    min-height: 700px;
+    width: 100%;
+    position: relative;
+    /*padding: 0!important;*/
+    overflow: hidden;
+  }
+
+  .tm-home-main-image img {
+    position: absolute;
+    top: -200px;
+  }
+
+  .tm-home-main-image span {
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Hernitta, serif;
+  }
+
+  .tm-home-main-image a {
+    position: absolute;
+    top: 70%;
+    left: 40%;
+  }
+
+  .tm-home-title {
+    font-size: 50px;
+    /*margin-top: 60px;*/
+    margin-bottom: 20px;
+  }
+
+  .tm-home-container {
+    flex-direction: column;
+  }
+
+  .col-3 {
+    max-width: 650px !important;
+  }
+
+  .mobileMargin {
+    margin-left: 12% !important;
+    margin-bottom: 10%;
+  }
+
+  .tm-home-middle {
+    height: 800px !important;
+  }
+
+  .tm-home-middle :hover {
+    transform: scale(1);
+    filter: brightness(1);
+
+  }
 
 }
