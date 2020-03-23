@@ -43,7 +43,7 @@ body {
   /*-webkit-filter: blur(3px);*/
 
   /* Full height */
-  min-height: 3000px;
+  min-height: 4000px;
   height: auto;
   width: 100%;
   position: absolute;
@@ -115,7 +115,7 @@ body {
 }
 
 .tm-home-container {
-  display: flex;
+  /*display: flex;*/
 }
 
 .hashtag {
@@ -156,12 +156,14 @@ body {
 }
 
 .tm-home-middle {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
-  height: 580px;
-  width: 338px;
-  padding: 0 !important;
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.8);*/
+  border: 15px solid #ffffff;
+  background: red;
+  min-width: 300px;
+  max-width: 300px;
   overflow: hidden;
-  transition: transform .2s; /* Animation */
+  margin-left: 30px;
+  float: left;
 }
 
 .tm-home-middle img {
@@ -169,14 +171,16 @@ body {
   /*position: relative;*/
   /*height: inherit;*/
   width: 100%;
-  height: 100%;
+  display: block;
+
+  /*height: auto;*/
   /*top : -100px*/
 
 }
 
 .tm-home-middle :hover {
   transform: scale(1.1);
-  filter: brightness(1.5);
+  filter: brightness(1.1);
 
 }
 
@@ -208,7 +212,7 @@ body {
   width: 95%;
   /*height: inherit;*/
   margin-left: 2.5%;
-  top: -500px;
+  top: -300px;
 }
 
 .tm-home-main-image span {
@@ -284,8 +288,6 @@ body {
   float: left;
 
 }
-
-
 
 .mybtn {
   font-family: Trajan, serif;
@@ -385,15 +387,15 @@ body {
 }
 
 
-.gallerySection{
-  margin-top: 100px;
+.gallerySection {
+  margin-top: 20px;
 }
 
 
 @media only screen and (max-device-width: 500px) {
   /* For mobile phones: */
   [class="bg-image"] {
-    min-height: 3000px;
+    min-height: 5000px;
     background-repeat: repeat-y;
     background-size: cover;
   }
@@ -456,19 +458,14 @@ body {
     max-width: 80% !important;
   }
 
-  .mobileMargin {
-    margin-left: 16% !important;
-    margin-bottom: 10%;
-  }
-
-  .tm-home-middle {
-    height: 400px !important;
-  }
-
   .tm-home-middle :hover {
     transform: scale(1);
     filter: brightness(1);
 
+  }
+
+  .tm-home-middle {
+    margin-bottom: 50px;
   }
 
 }
@@ -476,7 +473,7 @@ body {
 @media only screen and (max-width: 900px) and (min-width: 800px) {
   /*For ipads*/
   [class="bg-image"] {
-    min-height: 3000px;
+    min-height: 5000px;
     background-repeat: repeat-y;
     background-size: cover;
   }
@@ -528,11 +525,7 @@ body {
 
   .mobileMargin {
     margin-left: 12% !important;
-    margin-bottom: 10%;
-  }
-
-  .tm-home-middle {
-    height: 800px !important;
+    margin-bottom: 1%;
   }
 
   .tm-home-middle :hover {
@@ -541,4 +534,8 @@ body {
 
   }
 
+
+  .tm-home-middle {
+    margin-bottom: 50px;
+  }
 }
