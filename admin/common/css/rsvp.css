@@ -1,0 +1,54 @@
+/*tr{*/
+/*    background-color: #1B1B1B!important;*/
+/*    color: white!important;*/
+/*    text-align: center;*/
+/*}*/
+
+.table-responsive {
+    margin-top: 50px;
+}
+
+table.dataTable tr.odd {
+    background-color: #454d55;
+    color: white;
+}
+
+table.dataTable tr.even {
+    background-color: #636b73;
+    color: white;
+}
+
+table.dataTable tr:hover {
+    background-color: #696969;
+}
+
+table.dataTable tr {
+
+    text-align: center;
+}
+
+table.dataTable th {
+    background-color: #1B1B1B;
+    color: white;
+    text-align: center;
+}
+
+.dataTables_info {
+    color: white !important;
+}
+
+.dataTables_length {
+    color: white !important;
+}
+
+.dataTables_filter {
+    color: white !important;
+}
+
+#myTable_previous {
+    color: white !important;
+}
+
+#myTable_next {
+    color: white !important;
+}

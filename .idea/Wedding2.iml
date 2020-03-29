@@ -11,5 +11,8 @@
     <orderEntry type="library" name="all" level="application" />
     <orderEntry type="library" name="jquery-3.4.1" level="application" />
     <orderEntry type="library" name="jquery" level="application" />
+    <orderEntry type="library" name="jquery.dataTables" level="application" />
+    <orderEntry type="library" name="Chart" level="application" />
+    <orderEntry type="library" name="chartjs-plugin-labels" level="application" />
   </component>
 </module>

@@ -40,7 +40,7 @@ $(document).ready(function() {
   $("#myForm").on("submit", function(event) {
     event.preventDefault();
     let dataString = $(this).serialize();
-    dataString = dataString.concat("&yesorno=", $("#yesorno").is(":checked"))
+    dataString = dataString.concat("&yesorno=", $("#yesorno").is(":checked"));
     console.log(dataString);
 
 
@@ -48,15 +48,15 @@ $(document).ready(function() {
       type: "POST",
       url: "common/PHP/index.php",
       data: dataString,
-      success: function(data) {
+      success: function (data) {
 
-          $("#myForm")[0].reset();
-          $("#successMessage").slideDown();
+        $("#myForm")[0].reset();
+        $("#successMessage").slideDown();
 
       },
-        error: function(XMLHttpRequest, textStatus, errorThrown) {
-            $("#failMessage").slideDown();
-        }
+      error: function (XMLHttpRequest, textStatus, errorThrown) {
+        $("#failMessage").slideDown();
+      }
 
     });
   });

@@ -1,0 +1,9 @@
+body {
+    background-color: rgba(29, 0, 59, 0.74) !important;
+
+}
+
+.nav-item:hover {
+    color: darkorchid !important;
+    background-color: rgba(252, 250, 255, 0.05);
+}

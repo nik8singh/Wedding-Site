@@ -1,0 +1,14 @@
+.mybtn:hover {
+    background-color: whitesmoke !important;
+    color: black !important;
+}
+
+.mybtn {
+    text-align: center;
+    width: 50%;
+    font-size: 100px !important;
+    height: 300px;
+    color: white !important;
+    padding-top: 70px !important;
+
+}
