@@ -25,16 +25,10 @@
 <body>
 <header>
     <div>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark" style="height: 100px; font-size: 40px">
-            <a class="navbar-brand" href="#">WEDDING ADMIN</a>
-            <button class="navbar-toggler" data-target="#navbarCollapse" data-toggle="collapse" type="button">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="../index.html">Main Website</a>
-                </div>
+        <nav class="navbar navbar-dark bg-dark headertext" style="height: 100px; font-size: 25px">
+            <a class="navbar-brand headertext" href="#" style="font-size: 25px">WEDDING ADMIN</a>
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="../index.html">Go To Main Website</a>
             </div>
         </nav>
     </div>
@@ -43,15 +37,15 @@
 
     <h1>Login</h1>
     <form action="common/PHP/authenticate.php" method="post">
-        <label for="username">
+        <label for="adminusername">
             <i class="fas fa-user"></i>
         </label>
-        <input type="text" name="username" placeholder="Username" id="username" required>
-        <label for="password">
+        <input type="text" name="adminusername" placeholder="Username" id="adminusername" required>
+        <label for="adminpassword" class="leftone">
             <i class="fas fa-lock"></i>
         </label>
-        <input type="password" name="password" placeholder="Password" id="password" required>
-        <input type="submit" value="Login">
+        <input type="password" name="adminpassword" placeholder="Password" id="adminpassword" required>
+        <input type="submit" value="I am Family. Let me in!">
         <?php
         if (isset($_SESSION["error"])) {
             $error = $_SESSION["error"];
@@ -60,6 +54,8 @@
         ?>
     </form>
 </div>
+
+
 </body>
 </html>
 
