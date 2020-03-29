@@ -1,12 +1,6 @@
 $(document).ready(function() {
-
-
-
-
-  const inputs = document.querySelectorAll(".rsvpForm input");
-  var labels = document.querySelectorAll(".rsvpForm label");
+  const labels = document.querySelectorAll(".rsvpForm label");
   labels.forEach(label => {
-    console.log(label.innerHTML);
     label.innerHTML = label.innerText
       .split("")
       .map(
@@ -27,7 +21,6 @@ $(document).ready(function() {
       $("#visaPanel").slideDown();
     } else if (this.value === "0") {
       phoneNumber = $("#rsvp_phone").val();
-      console.log(phoneNumber);
       $("#phonePanel").slideUp("slow", function() {
         $("#rsvp_phone").val("000");
       });
@@ -40,10 +33,8 @@ $(document).ready(function() {
   $("#myForm").on("submit", function(event) {
     event.preventDefault();
     let dataString = $(this).serialize();
-    dataString = dataString.concat("&yesorno=", $("#yesorno").is(":checked"));
-    console.log(dataString);
-
-
+    let response = $("#yesorno").is(":checked");
+    dataString = dataString.concat("&yesorno=", response);
     $.ajax({
       type: "POST",
       url: "common/PHP/index.php",
@@ -51,8 +42,17 @@ $(document).ready(function() {
       success: function (data) {
 
         $("#myForm")[0].reset();
-        $("#successMessage").slideDown();
 
+        if (response)
+          $("#successMessage").slideDown();
+        else
+          $("#sorryMessage").slideDown();
+
+        $("#rsvp_phone").val(phoneNumber);
+        $("#phonePanel").slideDown();
+        $("#adultGuestPanel").slideDown();
+        $("#childGuestPanel").slideDown();
+        $("#visaPanel").slideDown();
       },
       error: function (XMLHttpRequest, textStatus, errorThrown) {
         $("#failMessage").slideDown();

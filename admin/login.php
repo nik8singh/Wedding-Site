@@ -15,8 +15,6 @@
             rel="stylesheet"
     />
     <link rel="stylesheet" href="common/css/login.css">
-
-
     <link href="common/css/common.css" rel="stylesheet">
     <?php
     session_start();
@@ -26,7 +24,7 @@
 <header>
     <div>
         <nav class="navbar navbar-dark bg-dark headertext" style="height: 100px; font-size: 25px">
-            <a class="navbar-brand headertext" href="#" style="font-size: 25px">WEDDING ADMIN</a>
+            <a class="navbar-brand headertext" href="#" style="font-size: 30px">WEDDING ADMIN</a>
             <div class="navbar-nav">
                 <a class="nav-item nav-link" href="../index.html">Go To Main Website</a>
             </div>
