@@ -7,3 +7,14 @@ body {
     color: darkorchid !important;
     background-color: rgba(252, 250, 255, 0.05);
 }
+
+@media only screen and (max-device-width: 500px) {
+
+    .headertext {
+        font-size: 50px !important;
+    }
+
+    .navbar {
+        height: 200px !important;
+    }
+}
