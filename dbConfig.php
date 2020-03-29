@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
 $port = "3306";
-$username = "nikhil";
-$password = "Welcome1";
+$username = "root";
+$password = "password";
 $dbname = "wedding_guest";
 
 // Create connection

@@ -11,7 +11,10 @@
                     <a class="nav-item nav-link" href="index.php">Home</a>
                 </div>
                 <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link" href="login.php">Logout</a>
+                    <form action="common/PHP/logout.php" id="logoutForm" method="post">
+                        <a class="nav-item nav-link" href="#" onclick="document.getElementById('logoutForm').submit();">Logout</a>
+                    </form>
+
                 </div>
             </div>
         </nav>
