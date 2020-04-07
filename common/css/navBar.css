@@ -4,6 +4,12 @@
 }
 
 
+.tm-brand-row {
+    align-items: center;
+    padding-top: 2px;
+    padding-bottom: 28px;
+}
+
 .navbar-inverse {
     border-bottom-width: thin;
     border-bottom-style: solid;
@@ -21,6 +27,12 @@ nav .navbar-nav li a {
     font-size: large;
     margin-right: 30px;
 }
+
+.nav-item:hover {
+    color: darkorchid !important;
+    background-color: rgba(252, 250, 255, 0.05);
+}
+
 
 nav .navbar-nav li a:hover {
     /*color: #655400 !important;*/

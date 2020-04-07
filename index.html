@@ -30,218 +30,23 @@
       <link rel="stylesheet" href="common/css/rsvp.css"/>
       <link rel="stylesheet" href="common/css/checkbox.css"/>
       <link rel="stylesheet" href="common/css/navBar.css"/>
-      <link href="common/css/story.css" rel="stylesheet"/>
-
       <link href="common/css/images.css" rel="stylesheet"/>
+      <link href="common/css/common.css" rel="stylesheet"/>
+      <link href="common/css/story.css" rel="stylesheet"/>
       <link rel="shortcut icon" href="common/img/favicon.ico" type="image/x-icon"/>
       <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <div class="bg-image"></div>
-
-    <div
-      class="modal"
-      id="modalLoginForm"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="myModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog " role="document">
-        <div class="modal-content rsvp-popup">
-          <div class="modal-header text-center">
-            <h4 class="modal-title w-100">RSVP</h4>
-
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-
-          <form action="#" method="get" autocomplete="off" id="myForm">
-            <div class="modal-body mx-3" >
-              <div class="md-form mb-4 rsvpForm">
-                <input
-                  type="text"
-                  id="rsvp_name"
-                  class="myInput"
-                  name="guestname"
-                  required
-                />
-                <label for="rsvp_name" >Name</label>
-              </div>
-
-              <div class="md-form mb-4">
-                <label class="b-contain">
-                  <span>Accepts with pleasure</span>
-                  <input type="radio" name="response" value="1" id="yesorno" checked>
-                  <div class="b-input"></div>
-                </label>
-
-              </div>
-
-              <div class="md-form mb-4" >
-
-                <label class="b-contain">
-                    <span>Decline with regret</span>
-                  <input type="radio" name="response" value="0">
-                  <div class="b-input"></div>
-                </label>
-              </div>
-
-              <div class="md-form mb-4 rsvpForm" id="phonePanel">
-                <input
-                  type="text"
-                  id="rsvp_phone"
-                  class="myInput"
-                  name="guestphone"
-                  required
-                />
-                <label for="rsvp_phone">Phone Number</label>
-              </div>
-
-              <div class="md-form mb-4 rsvpNumberForm" id="adultGuestPanel">
-
-                <label for="rsvp_adult_guest">Total Adult Guests?</label>
-                <input
-                  type="number"
-                  id="rsvp_adult_guest"
-                  class="myInput"
-                  min="0"
-                  max="6"
-                  value="1"
-                  name="guestAdults"
-                />
-
-
-              </div>
-
-              <div class="md-form mb-4 rsvpNumberForm" id="childGuestPanel">
-
-                  <label for="rsvp_child_guest">Guests under 16?</label>
-                <input
-                  type="number"
-                  id="rsvp_child_guest"
-                  class="myInput"
-                  min="0"
-                  max="6"
-                  value="0"
-                  name="guestChild"
-                />
-
-              </div>
-
-              <div class="md-form mb-4" id="visaPanel">
-                <i
-                  class="fas fa-globe-americas"
-                  style="float: left; padding-top: 10px; margin-right: 10px"
-                ></i>
-
-                <label class="label mylabel">
-                  <label style="margin-right: 10px; padding-top: 5px;"
-                    >Need Visa</label
-                  >
-                  <div class="toggle">
-                    <input
-                      class="toggle-state"
-                      type="checkbox"
-                      name="guestvisa"
-                      value="check"
-                    />
-                      <div class="indicator"></div>
-                  </div>
-
-                    <label style="margin-left: 10px; padding-top: 5px;"
-                    >Already have it</label
-                    >
-                </label>
-              </div>
-            </div>
-              <div class="alert alert-success hidden" id="successMessage">
-                  <strong>Yay!</strong> See you at the Wedding <i class="far fa-kiss-wink-heart"></i>
-              </div>
-              <div class="alert alert-success hidden" id="sorryMessage">
-                  <strong>We will miss you</strong> Celebrate from afar.. <i class="far fa-heart"></i>
-              </div>
-              <div class="alert alert-danger hidden" id="failMessage">
-                  <strong>OOPS!</strong> Something went wrong. Try again in few minutes.
-              </div>
-              <div class="modal-footer d-flex justify-content-center">
-                  <button class="btn btn-default mybtn rsvpbntn" id="submit">Submit</button>
-              </div>
-          </form>
-        </div>
-      </div>
-    </div>
-
-    <header>
-
-      <div class="container-fluid">
-        <div class="row tm-brand-row">
-          <div class="col-lg-5">
-            <div class="tm-brand-container tm-bg-white-transparent">
-              <img src="common/img/fargo2.jpg" class="brand-img" alt="" />
-              <div class="tm-brand-texts">
-                <h1 class="text-uppercase tm-brand-name">#NIKकीSneha</h1>
-                <p class="hashtag font-weight-bold">December 05-07, 2020 <span class="counterTry"></span></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 " style="margin-left: 20px ">
-           <nav class="navbar navbar-expand-lg navbar-light navbar-inverse">
-             <a class="navbar-brand hidden" href="#"></a>
-             <button class="navbar-toggler navbar-toggler-right myNav" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon">
-                 <i class="fas fa-bars" style="color:#333333; font-size:28px; float: right"></i>
-               </span>
-             </button>
-
-             <div class="collapse navbar-collapse navlinks" id="navbarSupportedContent" style="color: red!important;">
-               <ul class="navbar-nav mr-auto">
-                 <li class="nav-item active">
-                   <a class="nav-link" href="#">Home</a>
-                 </li>
-                 <li class="nav-item">
-                   <a class="nav-link" data-backdrop="static"
-                      data-target="#modalLoginForm"
-                      data-toggle="modal"
-                      href="#"
-                   >Invitation</a>
-                 </li>
-                 <li class="nav-item">
-                   <a class="nav-link" href="#tmStory" id="storylink">Story</a>
-                 </li>
-                 <li class="nav-item">
-                   <a class="nav-link" href="#homeGallery" id="gallerylink">Gallery</a>
-                 </li>
-                 <li class="nav-item">
-                   <a class="nav-link" href="#">Events</a>
-                 </li>
-                 <li class="nav-item">
-                   <a class="nav-link" href="#">Accommodation</a>
-                 </li>
-               </ul>
-             </div>
-           </nav>
-          </div>
-        </div>
-
-      </div>
-
-
-    </header>
+    <div id="mainHeader"></div>
 
     <section class="row" id="tmHome">
         <div class="col-xs-10 tm-home-main-image">
             <img alt="" class="picpanelimg" src="common/img/vegas1.JPG"/>
-            <span id="overlay_text" style=" text-align: center">We are getting married! <br>Join us in celebration of love and friendship.</span>
+            <span id="overlay_text" style=" text-align: center">We are getting married! <br>Join us in a celebration of love and friendship.</span>
 
             <a
-                    class="btn mybtn "
+                    class="btn mybtn"
                     data-backdrop="static"
                     data-target="#modalLoginForm"
                     data-toggle="modal"
@@ -290,35 +95,6 @@
 
     </section>
 
-
-    <section class="row gallerySection" id="homeGallery">
-
-        <div class="col-12 tm-home-container">
-            <div class="tm-home-middle  mobileMargin">
-                <img alt="" class="gallerypanleimg" src="common/img/vegas3.jpg"/>
-            </div>
-
-            <div class="tm-home-middle  mobileMargin">
-                <img class="gallerypanleimg" src="common/img/vegascandid.jpg" alt=""/>
-            </div>
-
-            <div class="tm-home-middle  mobileMargin">
-                <img alt="" class="gallerypanleimg" src="common/img/back2.jpg"/>
-            </div>
-
-            <div class="tm-home-middle   mobileMargin">
-                <img alt="" class="gallerypanleimg" src="common/img/IMG-1670.JPG"/>
-            </div>
-
-
-        </div>
-        <div class="col-12">
-            <div class="tm-home-middle   mobileMargin">
-                <img alt="" class="gallerypanleimg" src="common/img/IMG-3379.JPG"/>
-            </div>
-
-        </div>
-    </section>
   </body>
 
 </html>
@@ -333,18 +109,6 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-<script src="common/js/index.js"></script>
-<script src="assets/js/timezz.min.js"></script>
-<script>
-  const timer = new TimezZ('.counterTry', {
-    date: 'Dec 05, 2020',
-    text: {
-      days: ' days left',
-      // hours: ' hours',
-      // minutes: ' minutes',
-      // seconds: ' seconds',
-    },
-    canContinue: false,
-    // template: '<span>NUMBER</span><i>LETTER</i> ',
-  });
-</script>
+
+<script src="common/js/mainCommon.js"></script>
+

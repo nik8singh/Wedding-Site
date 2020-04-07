@@ -8,122 +8,6 @@ body {
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: Aisyah;
-  src: url("../../assets/Aisyah-Demo.otf") format("opentype");
-}
-
-@font-face {
-  font-family: cursif;
-  src: url("../../assets/Cursif.ttf") format("opentype");
-}
-
-@font-face {
-  font-family: Hernitta;
-  src: url("../../assets/Hernitta - Personal Use.otf") format("opentype");
-}
-
-
-@font-face {
-  font-family: Belly Betty;
-  src: url("../../assets/Belly Betty.ttf") format("opentype");
-}
-
-@font-face {
-  font-family: Soulofyou;
-  src: url("../../assets/Soul Of You.ttf") format("opentype");
-}
-
-.bg-image {
-  /* The image used */
-  background-image: url("../img/background/marble-large.jpg");
-
-  /* Add the blur effect */
-  /*filter: blur(3px);*/
-  /*-webkit-filter: blur(3px);*/
-
-  /* Full height */
-  min-height: 4000px;
-  height: auto;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  /* Center and scale the image nicely */
-  /*background-position: left 0 top -200px;*/
-  /*background-position: top right 600px;*/
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-}
-
-.tm-brand-row {
-  align-items: center;
-  padding-top: 2px;
-  padding-bottom: 28px;
-}
-
-.tm-brand-container {
-  min-width: 350px;
-  max-width: 400px;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 10em;
-}
-.brand-img {
-  height: 96px;
-  width: 43px;
-  margin-right: 20px;
-  -webkit-box-shadow: 0 15px 10px #777;
-  -moz-box-shadow: 0 15px 10px #777;
-  box-shadow: 0 15px 10px #777;
-  /*-webkit-transform: rotate(-1deg);*/
-  /*-moz-transform: rotate(-1deg);*/
-  /*-o-transform: rotate(-1deg);*/
-  /*-ms-transform: rotate(-1deg);*/
-  /*transform: rotate(-1deg);"*/
-}
-
-.tm-bg-white-transparent {
-  background-color: rgba(255, 255, 255, 0.51);
-}
-
-.tm-brand-icon {
-  /*width: 35px;*/
-  /*height: 40px;*/
-  /*display: flex;*/
-  align-items: center;
-  justify-content: center;
-  /*background-color: #333436;*/
-  color: rgba(146, 0, 2, 0.72);
-  /*border-radius: 50%;*/
-  margin: 30px 20px 40px 20px;
-  opacity: 0.9;
-}
-
-.tm-brand-name {
-  font-size: 2.3rem;
-  color: #333333;
-}
-
-.tm-home-container {
-  /*display: flex;*/
-}
-
-.hashtag {
-  font-family: cursif, serif;
-  font-size: 15px;
-
-}
-
 .tm-slogan {
   font-size: 1.4rem;
   font-weight: bold;
@@ -197,37 +81,37 @@ body {
 
 
 .tm-home-main-image {
-  /*margin-top: 50px;*/
-  max-height: 1500px;
-  min-height: 1500px;
-  width: 100%;
-  position: relative;
-  /*padding: 0!important;*/
-  overflow: hidden;
-  font-family: Hernitta, serif;
+    /*margin-top: 50px;*/
+    max-height: 800px;
+    min-height: 800px;
+    width: 100%;
+    position: relative;
+    /*padding: 0!important;*/
+    overflow: hidden;
+    font-family: Hernitta, serif;
 }
 
 .tm-home-main-image img {
-  position: absolute;
-  width: 95%;
-  /*height: inherit;*/
-  margin-left: 2.5%;
-  top: -300px;
+    position: absolute;
+    width: 85%;
+    /*height: inherit;*/
+    margin-left: 8%;
+    top: -400px;
 }
 
 .tm-home-main-image span {
-  position: absolute;
-  top: 50%;
-  left: 25%;
-  color: white;
-  font-size: 80px;
-  /*font-family: Hernitta, serif;*/
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    color: white;
+    font-size: 80px;
+    /*font-family: Hernitta, serif;*/
 }
 
 .tm-home-main-image a {
-  position: absolute;
-  top: 80%;
-  left: 45%;
+    position: absolute;
+    top: 75%;
+    left: 45%;
 }
 
 .tm-home-story {
@@ -289,87 +173,8 @@ body {
 
 }
 
-.mybtn {
-  font-family: Trajan, serif;
-  background: rgba(255, 255, 255, 0.73) !important;
-  width: 200px;
-  height: 50px;
-  padding-top: 0px !important;
-  /*font-weight: bold!important;*/
-  font-size: 30px !important;
-  /*opacity: .5;*/
-  /*font: inherit;*/
-  line-height: 1;
-  transition: 0.5s;
-  color: #000000 !important;
-}
-
-.mybtn:hover {
-  /*box-shadow: [inset?] [top] [left] [blur] [size] [color];*/
-  /*box-shadow: 0 0.7em 0.7em -0.4em rgba(105, 146, 88, 0.75), inset 0 -3.5em  0 0 #79000f;*/
-  box-shadow: inset 0 -3.5em 0 0 #79000f;
-  /*box-shadow: 0 0.7em 0.7em -0.4em rgba(33, 0, 10, 0.85), inset 0 -3.5em  0 0 #ffffff;*/
-  /*transform: translateY(-0.25em);*/
-  /*background-color: rgb(93, 93, 93);*/
-  color: white !important;
-  /*color: #1B1B1B!important;*/
-  border-color: rgb(81, 0, 3);
-}
-
-.rsvp-popup {
-  background-color: rgb(255, 255, 255);
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-  /*opacity: .9;*/
-}
-
-.mylabel{
-  display: inline-flex;
-  align-items: center;
-  cursor: pointer;
-  color: #394a56;
-}
 .label-text {
   margin-left: 16px;
-}
-
-
-.toggle {
-  isolation: isolate;
-  position: relative;
-  height: 30px;
-  width: 200px;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: -8px -4px 8px 0 #ffffff,
-  8px 4px 12px 0 #d1d9e6,
-  4px 4px 4px 0 #d1d9e6 inset,
-  -4px -4px 4px 0 #ffffff inset;
-}
-
-.toggle-state {
-  display: none;
-}
-
-.indicator {
-  height: 100%;
-  width: 200%;
-  background: #c20100;
-  border-radius: 15px;
-  transform: translate3d(-75%, 0, 0);
-  transition: transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
-  box-shadow: -8px -4px 8px 0 #ffffff,
-  8px 4px 12px 0 #d1d9e6;
-}
-
-.toggle-state:checked ~ .indicator {
-  transform: translate3d(25%, 0, 0);
-  background: #04c102;
-}
-
-.hidden {
-  display: none;
 }
 
 .visuallyhidden {
@@ -387,26 +192,9 @@ body {
 }
 
 
-.gallerySection {
-  margin-top: 20px;
-}
 
 
 @media only screen and (max-device-width: 500px) {
-  /* For mobile phones: */
-  [class="bg-image"] {
-    min-height: 5000px;
-    background-repeat: repeat-y;
-    background-size: cover;
-  }
-
-  .tm-brand-container {
-    margin-left: 5px;
-    margin-top: 1em;
-  }
-  .tm-brand-container img {
-    margin-left: 5px;
-  }
 
   .tm-home-container {
     flex-direction: column;
@@ -434,19 +222,19 @@ body {
   }
 
   .tm-home-main-image span {
-    position: absolute;
-    top: 40%;
-    left: 10%;
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
-    font-family: Hernitta, serif;
+      position: absolute;
+      top: 30%;
+      left: 10%;
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+      font-family: Hernitta, serif;
   }
 
   .tm-home-main-image a {
-    position: absolute;
-    top: 70%;
-    left: 28%;
+      position: absolute;
+      top: 60%;
+      left: 28%;
   }
 
   .tm-home-middle img {
@@ -471,12 +259,6 @@ body {
 }
 
 @media only screen and (max-width: 900px) and (min-width: 800px) {
-  /*For ipads*/
-  [class="bg-image"] {
-    min-height: 5000px;
-    background-repeat: repeat-y;
-    background-size: cover;
-  }
 
   .tm-home-main-image {
     /*margin-top: 50px;*/
