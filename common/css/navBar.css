@@ -24,7 +24,7 @@ nav .navbar-nav li a {
 }
 
 .nav-item {
-    font-size: large;
+    font-size: x-large;
     margin-right: 30px;
 }
 
@@ -38,7 +38,7 @@ nav .navbar-nav li a:hover {
     /*color: #655400 !important;*/
     color: #650005 !important;
     font-weight: bolder;
-    font-size: large;
+    /*font-size: xx-large;*/
 
 }
 

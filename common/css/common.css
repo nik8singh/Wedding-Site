@@ -28,34 +28,16 @@
     display: none;
 }
 
-.bg-image {
-    /* The image used */
+body, html {
+    height: 100%;
+
     background-image: url("../img/background/marble-large.jpg");
-
-    /* Add the blur effect */
-    /*filter: blur(3px);*/
-    /*-webkit-filter: blur(3px);*/
-
-    /* Full height */
-    min-height: 5000px;
-    height: auto;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    /* Center and scale the image nicely */
-    /*background-position: left 0 top -200px;*/
-    /*background-position: top right 600px;*/
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    z-index: -1;
 }
 
 .mybtn {
@@ -86,6 +68,8 @@
 }
 
 .tm-brand-container {
+
+    /*background-color: rgba(255, 255, 255, 0.51);*/
     min-width: 350px;
     max-width: 400px;
     height: 200px;
@@ -95,18 +79,14 @@
     margin-left: 10em;
 }
 
-.tm-bg-white-transparent {
-    background-color: rgba(255, 255, 255, 0.51);
-}
-
 
 .brand-img {
-    height: 96px;
-    width: 43px;
-    margin-right: 20px;
-    -webkit-box-shadow: 0 15px 10px #777;
-    -moz-box-shadow: 0 15px 10px #777;
-    box-shadow: 0 15px 10px #777;
+    height: auto;
+    width: 30%;
+    margin-right: 10px;
+    /*-webkit-box-shadow: 0 15px 10px #777;*/
+    /*-moz-box-shadow: 0 15px 10px #777;*/
+    /*box-shadow: 0 15px 10px #777;*/
     /*-webkit-transform: rotate(-1deg);*/
     /*-moz-transform: rotate(-1deg);*/
     /*-o-transform: rotate(-1deg);*/
@@ -170,6 +150,11 @@
         min-height: 5000px;
         background-repeat: repeat-y;
         background-size: cover;
+    }
+
+
+    .tm-brand-container {
+        margin-top: 1em;
     }
 
 }

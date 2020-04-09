@@ -40,7 +40,6 @@ body {
 }
 
 .tm-home-middle {
-  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.8);*/
   border: 15px solid #ffffff;
   background: red;
   min-width: 300px;
@@ -51,67 +50,58 @@ body {
 }
 
 .tm-home-middle img {
-
-  /*position: relative;*/
-  /*height: inherit;*/
   width: 100%;
   display: block;
-
-  /*height: auto;*/
-  /*top : -100px*/
-
 }
 
 .tm-home-middle :hover {
   transform: scale(1.1);
   filter: brightness(1.1);
-
 }
 
-
 .tm-home-right {
-  /*background-color: whitesmoke;*/
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
-  /*margin-top: -50px;*/
   height: 600px;
   width: 338px;
   padding: 0 !important;
   overflow: hidden;
 }
 
-
 .tm-home-main-image {
-    /*margin-top: 50px;*/
-    max-height: 800px;
-    min-height: 800px;
-    width: 100%;
-    position: relative;
-    /*padding: 0!important;*/
-    overflow: hidden;
-    font-family: Hernitta, serif;
+  max-height: 1000px;
+  min-height: 1000px;
+  width: 85%;
+  margin-left: 8%;
+  position: relative;
+  overflow: hidden;
+  font-family: Hernitta, serif;
+  background-attachment: fixed;
+  background-image: url("../img/vegas1.JPG");
+  background-position: 0% 25%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.tm-home-main-image img {
-    position: absolute;
-    width: 85%;
-    /*height: inherit;*/
-    margin-left: 8%;
-    top: -400px;
-}
+/*.tm-home-main-image img {*/
+/*    position: absolute;*/
+/*    width: 85%;*/
+/*    !*height: inherit;*!*/
+/*    margin-left: 8%;*/
+/*    top: -400px;*/
+/*}*/
 
 .tm-home-main-image span {
-    position: absolute;
-    top: 40%;
-    left: 20%;
-    color: white;
-    font-size: 80px;
-    /*font-family: Hernitta, serif;*/
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  color: white;
+  font-size: 80px;
 }
 
 .tm-home-main-image a {
-    position: absolute;
-    top: 75%;
-    left: 45%;
+  position: absolute;
+  top: 75%;
+  left: 45%;
 }
 
 .tm-home-story {
@@ -120,7 +110,6 @@ body {
   text-align: center;
   z-index: 5;
   color: #79000f;
-
 }
 
 .tm-home-story p {
@@ -141,19 +130,11 @@ body {
   color: #fff;
   font-weight: 100;
   font-size: 30px;
-  /*vertical-align:center*/
-  /*width: 100%;*/
-  /*display: flex;*/
-  /*justify-content: left;*/
-  /*align-items: baseline;*/
   height: fit-content;
 }
 
 .myClock > div {
-  /*padding: 10px;*/
-  /*background: #979898;*/
   display: inline-block;
-  /*border-radius: 70%;*/
 }
 
 .days {
@@ -170,7 +151,6 @@ body {
   margin-top: 10px;
   font-size: 16px;
   float: left;
-
 }
 
 .label-text {
@@ -181,21 +161,12 @@ body {
   opacity: 0;
 }
 
-.counterTry{
-
+.counterTry {
   color: #55000e;
-  /*opacity: .7;*/
-  margin-left: 10px;
-  /*font-weight: bold;*/
-  /*margin-top: 5px;*/
-
+  /*margin-left: 10px;*/
 }
 
-
-
-
 @media only screen and (max-device-width: 500px) {
-
   .tm-home-container {
     flex-direction: column;
   }
@@ -207,40 +178,33 @@ body {
   }
 
   .tm-home-main-image {
-    /*margin-top: 50px;*/
     max-height: 500px;
     min-height: 500px;
     width: 100%;
-    position: relative;
-    /*padding: 0!important;*/
-    overflow: hidden;
+    margin-left: 0;
+    background-position: 70% 100px;
   }
 
-  .tm-home-main-image img {
-    position: absolute;
-    top: -50px;
-  }
 
   .tm-home-main-image span {
-      position: absolute;
-      top: 30%;
-      left: 10%;
-      color: white;
-      font-size: 30px;
-      font-weight: bold;
-      font-family: Hernitta, serif;
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Hernitta, serif;
   }
 
   .tm-home-main-image a {
-      position: absolute;
-      top: 60%;
-      left: 28%;
+    position: absolute;
+    top: 80%;
+    left: 28%;
   }
 
   .tm-home-middle img {
     /*width: 100%!important;*/
   }
-
 
   .col-3 {
     max-width: 80% !important;
@@ -249,35 +213,26 @@ body {
   .tm-home-middle :hover {
     transform: scale(1);
     filter: brightness(1);
-
   }
 
   .tm-home-middle {
     margin-bottom: 50px;
   }
-
 }
 
-@media only screen and (max-width: 900px) and (min-width: 800px) {
-
+@media only screen and (max-width: 900px) and (min-width: 700px) {
   .tm-home-main-image {
-    /*margin-top: 50px;*/
+    margin: 0 !important;
     max-height: 700px;
     min-height: 700px;
-    width: 100%;
-    position: relative;
-    /*padding: 0!important;*/
-    overflow: hidden;
-  }
-
-  .tm-home-main-image img {
-    position: absolute;
-    top: -200px;
+    width: 100% !important;
+    background-position: center 5%;
+    background-size: contain;
   }
 
   .tm-home-main-image span {
     position: absolute;
-    top: 45%;
+    top: 60%;
     left: 20%;
     color: white;
     font-size: 40px;
@@ -287,7 +242,7 @@ body {
 
   .tm-home-main-image a {
     position: absolute;
-    top: 70%;
+    top: 80%;
     left: 40%;
   }
 
@@ -313,9 +268,7 @@ body {
   .tm-home-middle :hover {
     transform: scale(1);
     filter: brightness(1);
-
   }
-
 
   .tm-home-middle {
     margin-bottom: 50px;
